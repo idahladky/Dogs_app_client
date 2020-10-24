@@ -6,7 +6,7 @@ import Form from "./components/Form";
 
 function App() {
 
-// const url  = "http://localhost:4500" // variable to hold url
+// const url  = "https://localhost:4500" // variable to hold url
 const url = "http://ihdogsbackend.herokuapp.com"
 const [dogs, setDogs] = React.useState([]) // store API data. the hook to hold state. initialize empty array
 

@@ -4,19 +4,19 @@ const Display = (props) => {
 
   const {dogs} = props
 
-  const loaded = () => ( // use parentheses instead of curly brackets
+  const loaded = () => ( 
     <div style={{textAlign: "center"}}>
-      {dogs.map((dog) => ( // use parentheses instead of curly brackets
+      {dogs.map((dog) => ( 
         <article>
           <img src={dog.img}/>
           <h1>{dog.name}</h1>
           <h3>{dog.age}</h3>
           <button onClick={() => {
-            props.selectDog(dog) // passing the dog as selectDog
+            props.selectDog(dog) 
             props.history.push("/edit")
           }} >Edit</button>
           <button onClick={() => {
-            props.deleteDog(dog) // passing the dog as selectDog
+            props.deleteDog(dog) 
           }} >Delete</button>
 
         </article>
@@ -31,3 +31,11 @@ const Display = (props) => {
 };
 
 export default Display;
+
+// Line 7 // use parentheses instead of curly brackets
+
+// Line 9 // use parentheses instead of curly brackets
+
+// Line 15 // passing the dog as selectDog
+
+// Line 19 // passing the dog as selectDog

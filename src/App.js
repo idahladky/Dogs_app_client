@@ -82,14 +82,14 @@ const deleteDog = (dog) => {
       <main>
         <Switch> 
           <Route exact path="/" render={(rp) => <Display selectDog={selectDog} {...rp} dogs={dogs} deleteDog={deleteDog}/>} /> 
-          <Route // this is the create route
+          <Route 
             exact
             path="/create"
-            render={(rp) => ( // rp = router props. this is from the Route/React library
+            render={(rp) => ( 
               <Form {...rp} label="create" dog={emptyDog} handleSubmit={handleCreate} />
             )}
           />
-          <Route // this is the edit route
+          <Route 
             exact
             path="/edit"
             render={(rp) => (
@@ -107,3 +107,9 @@ export default App;
 // Line 83 // switch makes it so only one route shows at a time. it switches between each one
 
 // Line 84 // this is the root path. taking dogs state from useState, putting it in curly brackets as the data, and calling it dogs, to pass it down as props to the Display.js. we will call this "dogs" in Display.js when we want to refer to props
+
+// Line 85 // this is the create route
+
+// Line 88 // rp = router props. this is from the Route/React library
+
+// Line 92 // this is the edit route
